@@ -1,4 +1,15 @@
- int main()
+#include <iostream>
+#include <stdlib.h>
+#include <iomanip>
+#include"Seq.h"
+#include<string>
+#include <limits.h>
+#include <cstdlib>
+#include<fstream>
+#include <sstream>
+int DefaultVertices=100;
+using namespace std;
+int main()
 {
 Graphlnk G(30);
 cout<<"读取文件插入站点" <<endl;
