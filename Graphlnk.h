@@ -1,14 +1,4 @@
-#include <iostream>
-#include <stdlib.h>
-#include <iomanip>
-#include"Seq.h"
-#include<string>
-#include <limits.h>
-#include <cstdlib>
-#include<fstream>
-#include <sstream>
-int DefaultVertices=100;
-using namespace std;
+
 class Edge
 {
 public:
