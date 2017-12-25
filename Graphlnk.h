@@ -1,33 +1,34 @@
-
 class Edge
 {
 public:
 string dest;//路由器终点号 
-int cost;//路由器之间边的权值 
+string netnumber;
+string yanma; 
+int cost;
 Edge*link;	
 };
 class Vertex
 { 
     public:
- 	string start;//路由器起点号 
+ 	string start;//路由器号 
 	Edge*adj;
 };
 class Graphlnk
 {
 	public:
 	int maxVertices;  //图中结点最大数 
-	int numEdges;   //图中边数的个数 
-	int numVertices;//图中结点个数 
+	int numEdges;   
+	int numVertices;
 	Graphlnk();
 	Graphlnk(int sz);
 	int getWeight(int v1,int v2);
 	bool insertVertex();//插入一个结点 
-	bool insertEdge(int v1,int v2,int cost);//插入一条边 
+	bool insertEdge(int v1,int v2,int cost,string v3,string v4);//插入一条边 
 	int getFirstNeighbor(int v);//v的第一个相邻结点
-	int getNextNeighbor(int v,int w);//v的除w以外的结点 
-	bool removeVertex(int v);//删除一个结点 
-	bool removeEdge(int v1,int v2);//删除一条边 
-	int getVertexPos(const string vertex)//获取结点的位置 
+	int getNextNeighbor(int v,int w);
+	bool removeVertex(int v);
+	bool removeEdge(int v1,int v2);
+	int getVertexPos(const string vertex)
 	{
 		for(int i=0;i<30;i++)
 		{
