@@ -1,3 +1,4 @@
+#include"Graph.h"
 int Graphlnk::getWeight(int v1,int v2)
 {
 	if( v1 != -1 && v2 != -1)//两个结点都存在
