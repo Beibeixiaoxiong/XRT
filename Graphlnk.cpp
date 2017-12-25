@@ -1,6 +1,6 @@
 int Graphlnk::getWeight(int v1,int v2)
 {
-	if( v1 != -1 && v2 != -1)
+	if( v1 != -1 && v2 != -1)//两个结点都存在
 	{
 		Edge *p = NodeTable[v1].adj;
 		while (p!= NULL && p->dest!= NodeTable[v2].start)
