@@ -29,7 +29,7 @@ bool Graphlnk::removeEdge(int v1,int v2)//图上删一条边
 }
 bool Graphlnk::removeVertex(int v)
 {
-	if(v<0||v>=numVertices) 
+	if(v<0||v>=numVertices) //该结点不存在
 {
 	cout<<"该结点错误"<<endl;	
 	return false;
