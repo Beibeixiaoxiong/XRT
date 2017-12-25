@@ -1,6 +1,4 @@
-
-下午 4:18:11
-小熊 2017/12/25 星期一 下午 4:18:11
+#include"Graphlnk.h"
 int main()
 {
 Graphlnk G(30);
