@@ -1,4 +1,4 @@
-#include"Graph.h"
+#include"Graphlnk.h"
 int Graphlnk::getWeight(int v1,int v2)
 {
 	if( v1 != -1 && v2 != -1)
